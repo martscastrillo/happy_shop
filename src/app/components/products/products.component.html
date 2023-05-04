@@ -1,0 +1,15 @@
+<div class="superdiv">
+    <p>Today: {{today | date: 'shortDate'}}</p>
+    <div class="div-stats">
+        <p>Tienes {{myShoppingCart.length}} productos añadidos</p>
+        <p>El total de tu compra es ${{total}}</p>
+    </div>
+</div>
+
+
+
+
+<div class="products--grid">
+    <app-product [product]="product" *ngFor="let product of products"
+        (addedProduct)="onAddToShoppingCart($event)"></app-product>
+</div>

@@ -1,0 +1,12 @@
+<div class="div-product">
+    <div class="div-image">
+        <app-img [img]="product.image"> </app-img>
+    </div>
+    <div class="div-text">
+        <h2>{{product.price | currency: 'EUR'}}</h2>
+        <!-- <p>{{product.title | reverse}}</p> -->
+        <p>{{product.title }}</p>
+        <p appHighlight>{{product.description}}</p>
+        <button (click)="onAddToCart()">Add cart</button>
+    </div>
+</div>

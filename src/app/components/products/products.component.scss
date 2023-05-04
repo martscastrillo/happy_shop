@@ -1,0 +1,29 @@
+.superdiv{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.div-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+   gap: 6px;
+}
+.products--grid{
+    display: flex;
+    flex-direction: column;
+ 
+    gap: 15px;
+    width: 100%;
+    @media screen and (min-width: 40em) and (max-width: 63.9em) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+    @media screen and (min-width: 64em) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+  
+    }

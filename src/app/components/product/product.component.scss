@@ -1,0 +1,46 @@
+
+.div-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.div-image{
+  
+    margin: 3px;
+    padding: 3px;
+}
+.div-text{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 12px;
+    width:240px;
+
+}
+h2{
+    font-weight: 600;
+    background-color: #ACD9B2;
+    width: fit-content;
+    padding: 5px;
+}
+p{
+    overflow: hidden;
+}
+button{
+    color: white;
+    background-color: #003d08;
+ 
+    border: 0;
+    padding: 5px;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+ 
+    box-shadow: 0px 2px 5px rgb(black, .2);
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: button; /* for input */
+       -moz-user-select: none;
+        -ms-user-select: none;
+  }
